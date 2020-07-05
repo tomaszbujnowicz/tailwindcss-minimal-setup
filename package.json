@@ -1,0 +1,28 @@
+{
+  "name": "tailwindcss-minimal-setup",
+  "version": "1.0.0",
+  "description": "Setup Tailwind CSS in 20 seconds without node_modules",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "tailwind": "npx tailwindcss build tailwind.css -o style.css",
+    "autoprefixer": "postcss style.css -u autoprefixer --no-map -o style.css",
+    "minify": "postcss style.css -u cssnano --no-map -o style.min.css",
+    "build": "npm run tailwind && npm run autoprefixer",
+    "production": "npm run tailwind && npm run autoprefixer && npm run minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomaszbujnowicz/tailwindcss-minimal-setup.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Tomasz Bujnowicz",
+    "email": "hi@tomaszbujnowicz.com",
+    "url": "https://www.tomaszbujnowicz.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomaszbujnowicz/tailwindcss-minimal-setup/issues"
+  },
+  "homepage": "https://github.com/tomaszbujnowicz/tailwindcss-minimal-setup#readme"
+}
