@@ -1,6 +1,10 @@
 # 🚀 Setup Tailwind CSS in 20 seconds without node_modules
 
+### Based on my [article](https://dev.to/tomaszbujnowicz/setup-tailwind-css-in-20-seconds-without-nodemodules-1b83)
+
 Tired of running `npm install / yarn` and seeing tons of files installed in your node_modules just to process your Tailwind CSS file? I got you, have a look at this minimal approach.
+
+---
 
 ### Requirements
 Make sure all dependencies have been installed before moving on:
